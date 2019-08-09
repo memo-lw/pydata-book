@@ -1,0 +1,38 @@
+1.dict字典: 字典 是一系列键—值对 
+  定义/创建:   alien_0 = {'color': 'green', 'points': 5}
+  字典的方法:  访问 print(alien_0['color'])    => green
+              追加 alien_0['x_position'] = 0  => {'color': 'green', 'points': 5, 'x_position': 0}
+              删除 del alien_0['points']      => {'color': 'green', 'x_position': 0}
+              遍历所有的键—值对：for key, value in alien_0.items():
+                                   print("\nKey: " + key)
+                                   print("Value: " + value)
+              遍历字典中的所有键：for name in alien_0.keys():
+                                   print(name.title())
+              遍历字典中的所有值：for language in alien_0.values():
+                                   print(language.title())
+2.集合:用来存储⽆无序不重复对象。所谓不重复对象，除了不是同一对象外，还包括 "值" 不能相同。
+  特性
+  创建: s = set("abc")                    =>  set(['a', 'c', 'b'])
+  方法: s.add("d")       # 添加元素       =>  set(['a', 'c', 'b', 'd'])
+        s.remove("b")    # 移除元素       =>  set(['a', 'c', 'd'])
+        s.update(set("abcd")) # 合并集合  =>  set(['a', 'c', 'b', 'd'])
+        s.pop()          # 弹出元素       =>  set(['c', 'b', 'd'])
+3.判断语句（要求掌握多条件判断）
+  条件判断：if age >= 18:
+              print('your age is', age)
+           elif age >= 6:
+              print('your age is', age)
+           else:
+              print('your name is', name)
+
+4.三目表达式
+    为真时的结果 if 判定条件 else 为假时的结果
+    例：100 if  77 > 66 else 99   #如果77大于66，输出100，否则输出99
+5.循环语句
+  while循环: current_number = 1
+             while current_number <= 5:
+                print(current_number)
+                current_number += 1
+    for循环: names = ['Michael', 'Bob', 'Tracy']
+             for name in names:
+                print(name)
